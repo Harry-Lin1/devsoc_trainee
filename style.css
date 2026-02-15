@@ -1,0 +1,51 @@
+:root {
+  --bg: #fdf6e3;    
+  --text: #586e75;  
+  --btn: #b58900;   
+}
+
+body.night-mode {
+  --bg: #073642;    
+  --text: #eee8d5;  
+  --btn: #2aa198;   
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  
+  transition: 0.6s ease-in-out;
+}
+
+.content-box {
+  text-align: center;
+}
+
+button {
+  background-color: var(--btn);
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px; 
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
